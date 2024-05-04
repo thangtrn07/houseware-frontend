@@ -1,0 +1,49 @@
+{
+   "name": "frontend",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "yarn run open-browser && next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "open-browser": "start http://localhost:3000"
+   },
+   "dependencies": {
+      "@nextui-org/react": "^2.3.1",
+      "@tanstack/react-query": "^5.32.0",
+      "@tanstack/react-query-devtools": "^5.32.0",
+      "antd": "^5.16.5",
+      "axios": "^1.6.8",
+      "clsx": "^2.1.0",
+      "date-fns": "^3.6.0",
+      "embla-carousel": "^8.0.2",
+      "embla-carousel-autoplay": "^8.0.2",
+      "embla-carousel-react": "^8.0.2",
+      "framer-motion": "^11.1.2",
+      "lucide-react": "^0.371.0",
+      "next": "14.2.1",
+      "nextjs-toploader": "^1.6.11",
+      "react": "^18",
+      "react-dom": "^18",
+      "react-hook-form": "^7.51.3",
+      "react-toastify": "^10.0.5",
+      "suneditor": "^2.46.2",
+      "suneditor-react": "^3.6.1",
+      "tailwind-merge": "^2.2.2",
+      "usehooks-ts": "^3.1.0",
+      "zustand": "^4.5.2"
+   },
+   "devDependencies": {
+      "@types/node": "^20",
+      "@types/react": "^18",
+      "@types/react-dom": "^18",
+      "eslint": "^8",
+      "eslint-config-next": "14.2.1",
+      "postcss": "^8",
+      "prettier": "^3.2.5",
+      "prettier-plugin-tailwindcss": "^0.5.14",
+      "tailwindcss": "^3.4.1",
+      "typescript": "^5"
+   }
+}

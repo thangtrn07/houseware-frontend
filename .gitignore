@@ -1,0 +1,14 @@
+# common
+node_modules/
+dist/
+
+.env
+
+# backend
+logs/
+*.error
+
+# frontend
+/.next/
+/out/
+/build

@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root {
+      --dark-color: #1c1c1c;
+      --gray-600-color: #505050;
+      --gray-500-color: #8b96a5;
+      --gray-400-color: #bdc4cd;
+      --gray-300-color: #dee2e6;
+      --gray-200-color: #eff2f4;
+      --gray-100-color: #f7fafc;
+      --blue-color: #0d6efd;
+      --light-sky-color: #e3f0ff;
+      --matcha-color: #c3ffcb;
+      --green-color: #00b517;
+      --peach-color: #ffe5bf;
+      --orange-color: #ff9017;
+      --red-color: #fa3434;
+   }
+
+   html ::-webkit-scrollbar {
+      border-radius: 0;
+      height: 8px;
+      width: 8px;
+   }
+
+   html ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+   }
+
+   html ::-webkit-scrollbar-track {
+      background-color: transparent;
+      border-radius: 0;
+   }
+}
+
+@layer components {
+   .header__dropdown_shadow {
+      box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.2);
+   }
+   .border-item {
+      @apply border border-[--gray-300-color];
+   }
+   .section {
+      @apply border-item mb-8 rounded-md bg-white;
+   }
+   .section-card {
+      @apply border-item rounded-md bg-white p-4;
+   }
+   .image-cover,
+   .image-contain {
+      @apply inline-block h-full w-full overflow-hidden;
+   }
+   .image-cover > img {
+      @apply h-full w-full object-cover;
+   }
+   .image-contain > img {
+      @apply h-full w-full object-contain;
+   }
+
+   .description-product .sun-editor {
+      border: none;
+   }
+   .description-product .se-resizing-bar {
+      display: none;
+   }
+   .description-product .se-wrapper-inner {
+      padding: 0;
+   }
+}
+
+@layer utilities {
+   .transition-ease {
+      @apply duration-250 transition-all ease-in-out;
+   }
+   .transition-linear {
+      @apply duration-250 transition-all ease-linear;
+   }
+}
