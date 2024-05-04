@@ -70,6 +70,10 @@
    .description-product .se-wrapper-inner {
       padding: 0;
    }
+
+   .description-product .sun-editor .se-wrapper .se-wrapper-code {
+      overflow: auto !important;
+   }
 }
 
 @layer utilities {
