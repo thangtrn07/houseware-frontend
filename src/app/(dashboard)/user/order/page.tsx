@@ -26,29 +26,6 @@ import { toast } from 'react-toastify';
 import LoadingState from '~/components/LoadingState';
 import { getStatusColor, getStatusText } from '~/utils/orderStatus';
 
-const orderStatus = [
-   {
-      label: 'Đang chờ duyệt',
-      value: 'pending'
-   },
-   {
-      label: 'Đang đóng gói',
-      value: 'processing'
-   },
-   {
-      label: 'Đang vận chuyển',
-      value: 'shipping'
-   },
-   {
-      label: 'Đã giao hàng',
-      value: 'delivered'
-   },
-   {
-      label: 'Đã huỷ',
-      value: 'cancelled'
-   }
-];
-
 export interface OrderQueryData {
    result?: IOrder[] | undefined;
    pagination: IPagination;
@@ -59,6 +36,29 @@ const OrderPage = () => {
       page: 1,
       limit: 10
    });
+
+   const orderStatus = [
+      {
+         label: 'Đang chờ duyệt',
+         value: 'pending'
+      },
+      {
+         label: 'Đang đóng gói',
+         value: 'processing'
+      },
+      {
+         label: 'Đang vận chuyển',
+         value: 'shipping'
+      },
+      {
+         label: 'Đã giao hàng',
+         value: 'delivered'
+      },
+      {
+         label: 'Đã huỷ',
+         value: 'cancelled'
+      }
+   ];
 
    const { data, isLoading, isRefetching, refetch } = useQuery<OrderQueryData>({
       queryKey: ['/order', pagination],
