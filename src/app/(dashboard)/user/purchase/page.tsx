@@ -26,28 +26,6 @@ import { fetchOrder } from '../order/_fetch';
 import { formatFullDate } from '~/utils/formatBaseDate';
 import { getStatusColor, getStatusText } from '~/utils/orderStatus';
 
-export const orderStatus = [
-   {
-      label: 'Đang chờ duyệt',
-      value: 'pending'
-   },
-   {
-      label: 'Đang đóng gói',
-      value: 'processing'
-   },
-   {
-      label: 'Đang vận chuyển',
-      value: 'shipping'
-   },
-   {
-      label: 'Đã giao hàng',
-      value: 'delivered'
-   },
-   {
-      label: 'Đã huỷ',
-      value: 'cancelled'
-   }
-];
 
 interface OrderQueryData {
    result?: IOrder[] | undefined;
@@ -59,6 +37,29 @@ const PurchasePage = () => {
       page: 1,
       limit: 10
    });
+
+   const orderStatus = [
+      {
+         label: 'Đang chờ duyệt',
+         value: 'pending'
+      },
+      {
+         label: 'Đang đóng gói',
+         value: 'processing'
+      },
+      {
+         label: 'Đang vận chuyển',
+         value: 'shipping'
+      },
+      {
+         label: 'Đã giao hàng',
+         value: 'delivered'
+      },
+      {
+         label: 'Đã huỷ',
+         value: 'cancelled'
+      }
+   ];
 
    const orderBy = '663249c40eb13ce23fb688d0';
 
