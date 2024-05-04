@@ -26,7 +26,7 @@ import { toast } from 'react-toastify';
 import LoadingState from '~/components/LoadingState';
 import { getStatusColor, getStatusText } from '~/utils/orderStatus';
 
-export interface OrderQueryData {
+interface OrderQueryData {
    result?: IOrder[] | undefined;
    pagination: IPagination;
 }

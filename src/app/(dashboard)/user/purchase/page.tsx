@@ -49,7 +49,7 @@ export const orderStatus = [
    }
 ];
 
-export interface OrderQueryData {
+interface OrderQueryData {
    result?: IOrder[] | undefined;
    pagination: IPagination;
 }
