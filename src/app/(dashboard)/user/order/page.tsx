@@ -26,7 +26,7 @@ import { toast } from 'react-toastify';
 import LoadingState from '~/components/LoadingState';
 import { getStatusColor, getStatusText } from '~/utils/orderStatus';
 
-export const orderStatus = [
+const orderStatus = [
    {
       label: 'Đang chờ duyệt',
       value: 'pending'
