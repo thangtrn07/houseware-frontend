@@ -12,9 +12,7 @@ const footerInformations = [
    {
       title: 'Liên hệ',
       informations: [
-         'Mua hàng: <a href="tel:0123456789" class="hover:text-[--red-color]"><b>0123456789</b></a> (7h-18h)',
-         'Mua hàng: <a href="tel:0123456789" class="hover:text-[--red-color]"><b>0123456789</b></a> (7h-18h)',
-         'Mua hàng: <a href="tel:0123456789" class="hover:text-[--red-color]"><b>0123456789</b></a> (7h-18h)'
+         'Mua hàng: <a href="tel:0933198925" class="hover:text-[--red-color]"><b>0933198925</b></a> (7h-18h)',
       ]
    }
 ];
